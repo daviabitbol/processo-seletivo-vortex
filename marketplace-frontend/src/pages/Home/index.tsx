@@ -3,7 +3,6 @@ import { useFetchProducts } from "../../hooks/useFetchProducts";
 import { useProductFilters } from "../../hooks/useProductFilters";
 import { FilterSidebar } from "../../components/FilterSidebar/FilterSidebar";
 import { ProductGrid } from "../../components/ProductGrid/ProductGrid";
-import axios from "axios";
 import "./style.css";
 import { api } from "../../services/api";
 

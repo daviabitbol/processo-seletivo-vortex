@@ -13,8 +13,8 @@ export function DeleteItem() {
     if (!product?.id) return;
 
     try {
-      const token = localStorage.getItem("token");
-      const response = await api.delete(`/products/${product.id}`);
+      await api.delete(`/products/${product.id}`);
+      navigate('/home')
     } catch (error) {
       console.error("Erro ao apagar item:", error);
     }

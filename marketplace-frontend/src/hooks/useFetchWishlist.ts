@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import type { ProductProps } from "../components/ItemCard/ItemCard";
 import { api } from "../services/api";
 

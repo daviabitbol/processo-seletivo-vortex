@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
-import axios from "axios";
 import type { ProductProps } from "../../components/ItemCard/ItemCard";
 import "./style.css";
 import { HomeButton } from "../../components/Buttons/HomeButton/HomeButton";
