@@ -1,0 +1,157 @@
+.deleteitem-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.deleteitem-wrapper {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.deleteitem-card-large {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 3.5rem 3rem 2.5rem 3rem;
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.card-tags-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.card-description {
+  font-size: 1.2rem;
+  color: #1f2937;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 2rem;
+}
+
+.card-price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #000000;
+}
+
+.card-author {
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.delete-confirmation-box {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.delete-confirmation-box p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.delete-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-confirm-delete {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-confirm-delete:hover {
+  background-color: #dc2626;
+}
+
+.btn-confirm-delete:active {
+  transform: scale(0.98);
+}
+
+.btn-cancel {
+  background-color: #6b7280;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #4b5563;
+}
+
+.btn-cancel:active {
+  transform: scale(0.98);
+}
+
+.card-action-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-home {
+  background-color: #638ecb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-home:hover {
+  background-color: #4a7bbd;
+}
+
+.btn-home:active {
+  transform: scale(0.98);
+}

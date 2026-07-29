@@ -1,0 +1,138 @@
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.waves-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background-color: #ffffff;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.login-card h2 {
+  font-size: 1.4rem;
+  color: #1e293b;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+}
+
+.login-card h3 {
+  font-size: 1rem;
+  color: #64748b;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.login-input:focus {
+  border-color: #2563eb;
+}
+
+.btn-login-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-login-submit:hover {
+  background-color: #1d4ed8;
+}
+
+.login-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.login-footer a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    max-width: 290px;
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .login-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .login-card h3 {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+
+  .login-input {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .btn-login-submit {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

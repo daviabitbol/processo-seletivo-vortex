@@ -1,0 +1,143 @@
+.checkitem-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.checkitem-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  gap: 20px;
+}
+
+.checkitem-card-large {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-tags-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.tag-item {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  padding: 0;
+  background: none;
+  letter-spacing: 0.5px;
+}
+
+.type-tag {
+  background: none;
+  color: #64748b;
+}
+
+.card-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 4px 0 0 0;
+  line-height: 1.2;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.card-price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.card-author {
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.button-action {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-update {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.button-update:hover {
+  background-color: #1d4ed8;
+}
+
+.button-delete {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.button-delete:hover {
+  background-color: #b91c1c;
+}
+
+.card-action-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.no-product-text {
+  text-align: center;
+  color: #64748b;
+  font-size: 1rem;
+  margin: 20px 0;
+}

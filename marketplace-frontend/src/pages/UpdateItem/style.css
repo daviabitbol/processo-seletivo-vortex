@@ -1,0 +1,131 @@
+.updateitem-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  box-sizing: border-box;
+}
+
+.updateitem-wrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.updateitem-card-large {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.card-tags-vertical-edit {
+  display: flex;
+  gap: 12px;
+}
+
+.input-inline-tag {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #f1f5f9;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #334155;
+  outline: none;
+}
+
+.input-inline-tag:focus {
+  border-color: #638ecb;
+}
+
+.input-inline-title {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-inline-description {
+  width: 100%;
+  font-size: 1rem;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.input-inline-title:focus,
+.input-inline-description:focus,
+.input-inline-price:focus {
+  border-color: #638ecb;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.input-inline-price {
+  width: 110px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.card-author {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.card-action-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .updateitem-card-large {
+    padding: 20px;
+  }
+
+  .card-action-container {
+    flex-direction: column;
+  }
+
+  .card-action-container button {
+    width: 100%;
+  }
+}

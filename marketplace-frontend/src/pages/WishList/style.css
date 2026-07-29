@@ -1,0 +1,26 @@
+.wishlist-container {
+  padding: 2rem;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+/* Alinha o título na esquerda e empurra o botão para a direita no topo */
+.wishlist-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.wishlist-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.empty-message {
+  color: #64748b;
+  font-size: 1rem;
+}
