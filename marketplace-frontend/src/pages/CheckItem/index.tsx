@@ -6,6 +6,7 @@ import type { ProductProps } from "../../components/ItemCard/ItemCard";
 import "./style.css";
 import { HomeButton } from "../../components/Buttons/HomeButton/HomeButton";
 import { GoToMyAnnouncesButton } from "../../components/Buttons/GoToMyAnnouncesButton/GoToMyAnnouncesButton";
+import { api } from "../../services/api";
 
 export type TokenPayload = {
   sub?: string;
@@ -52,7 +53,7 @@ export function CheckItem() {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await axios.get("http://localhost:3000/wishlist", {
+        const response = await api.get("/wishlist", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -83,9 +84,9 @@ export function CheckItem() {
       const headers = { Authorization: `Bearer ${token}` };
 
       if (nextState) {
-        await axios.post(`http://localhost:3000/wishlist/${product.id}`, {}, { headers });
+        await api.post(`/wishlist/${product.id}`, {}, { headers });
       } else {
-        await axios.delete(`http://localhost:3000/wishlist/${product.id}`, { headers });
+        await api.delete(`/wishlist/${product.id}`, { headers });
       }
     } catch (error) {
       console.error("Erro ao atualizar wishlist:", error);

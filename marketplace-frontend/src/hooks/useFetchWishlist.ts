@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import type { ProductProps } from "../components/ItemCard/ItemCard";
+import { api } from "../services/api";
 
 export const useFetchWishlist = () => {
   const [wishlistItems, setWishlistItems] = useState<ProductProps[]>([]);
@@ -22,7 +23,7 @@ export const useFetchWishlist = () => {
         return;
       }
 
-      const response = await axios.get("http://localhost:3000/wishlist", {
+      const response = await api.get("/wishlist", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

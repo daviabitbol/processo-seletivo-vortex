@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./ItemCard.css";
+import { api } from "../../services/api";
 
 export type ProductProps = {
   id: string;
@@ -52,13 +53,13 @@ export const ItemCard = ({
       const headers = { Authorization: `Bearer ${token}` };
 
       if (nextState) {
-        await axios.post(
-          `http://localhost:3000/wishlist/${product.id}`,
+        await api.post(
+          `/wishlist/${product.id}`,
           {},
           { headers }
         );
       } else {
-        await axios.delete(`http://localhost:3000/wishlist/${product.id}`, {
+        await api.delete(`/wishlist/${product.id}`, {
           headers,
         });
       }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./signUpForm.css";
+import { api } from "../../../services/api";
 
 export const SignUpForm= () => {
   const [username, setUsername] = useState("");
@@ -24,7 +25,7 @@ export const SignUpForm= () => {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:3000/users", {
+      await api.post("/users", {
         username,
         password,
       });

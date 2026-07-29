@@ -5,7 +5,7 @@ import { Chat } from '../../components/Chat/Chat';
 import './style.css';
 import { HomeButton } from '../../components/Buttons/HomeButton/HomeButton';
 
-const SOCKET_URL = 'http://localhost:3000';
+const SOCKET_URL = import.meta.env.VITE_API_URL;
 
 export function MyMessages() {
   const location = useLocation();

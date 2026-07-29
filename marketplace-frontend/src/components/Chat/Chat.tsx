@@ -15,7 +15,7 @@ interface ChatProps {
   currentUsername?: string | null;
 }
 
-const SOCKET_URL = "http://localhost:3000";
+const SOCKET_URL = import.meta.env.VITE_API_URL;
 
 export const Chat = ({
   initialRoom = "sala-padrao",

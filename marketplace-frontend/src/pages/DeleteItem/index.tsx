@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import type { ProductProps } from "../../components/ItemCard/ItemCard";
 import "./style.css";
+import { api } from "../../services/api";
 
 export function DeleteItem() {
   const location = useLocation();
@@ -13,19 +14,7 @@ export function DeleteItem() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(
-        `http://localhost:3000/products/${product.id}`,
-        {
-          method: "DELETE",
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        },
-      );
-
-      if (response.ok) {
-        navigate("/home");
-      }
+      const response = await api.delete(`/products/${product.id}`);
     } catch (error) {
       console.error("Erro ao apagar item:", error);
     }

@@ -5,6 +5,7 @@ import { FilterSidebar } from "../../components/FilterSidebar/FilterSidebar";
 import { ProductGrid } from "../../components/ProductGrid/ProductGrid";
 import axios from "axios";
 import "./style.css";
+import { api } from "../../services/api";
 
 const normalize = (str?: string) => {
   if (!str) return "";
@@ -28,7 +29,7 @@ export const Home = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await axios.get("http://localhost:3000/wishlist", {
+        const response = await api.get("/wishlist", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
