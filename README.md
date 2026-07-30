@@ -79,6 +79,8 @@ class-validator	Validação de dados de entrada (DTOs) -
 Swagger (@nestjs/swagger)	Documentação interativa dos endpoints -
 Throttler	Rate limiting das requisições -
 Docker / Docker Compose	Provisionamento do banco de dados local
+
+
 Frontend (marketplace-frontend) 
 Tecnologias -
 React 19 + TypeScript	Biblioteca principal da interface -
