@@ -124,18 +124,8 @@ processo-seletivo-vortex/
 
 📖 Documentação da API
 
-Com o backend rodando, a documentação interativa (Swagger) fica disponível em:
+Com o backend rodando, a documentação interativa (Swagger) fica disponível em: http://localhost:3000/docs
 
-http://localhost:3000/docs
-
-Principais grupos de endpoints:
-
-Recurso	Rotas
-Auth	POST /auth/login
-Users	POST /users
-Products	POST /products · GET /products · GET /products/:id · PUT /products/:id · DELETE /products/:id
-Wishlist	POST /wishlist/:id · GET /wishlist · DELETE /wishlist/:id
-Chat	WebSocket (join_room, send_message, get_my_chats)
 🤖 Diário de Bordo da IA
 
 Ferramentas utilizadas
@@ -153,7 +143,7 @@ me ajude a implementar um chat entre vendedor e comprador no meu marketplace
 Prompt 3:
 como eu implemento um repositório?
 
-Link de uma conversa longa de desenvolvimento com a IA:
+Link de uma conversa longa de desenvolvimento com a IA: https://share.gemini.google/TEed9H542qBu
 
 Reflexão crítica: 
 
