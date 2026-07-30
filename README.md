@@ -98,16 +98,21 @@ Com o backend rodando, a documentação interativa (Swagger) fica disponível em
 🤖 Diário de Bordo da IA
 
 Ferramentas utilizadas
+
  Gemini
  Claude
  ChatGPT
+ 
 Estratégia de engenharia de prompts
+
 
 Prompt 1:
 a minha requisição não funcionou e deu erro de CORS como resolver?
 
+
 Prompt 2:
 me ajude a implementar um chat entre vendedor e comprador no meu marketplace
+
 
 Prompt 3:
 como eu implemento um repositório?
