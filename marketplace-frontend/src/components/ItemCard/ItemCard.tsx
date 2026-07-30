@@ -83,9 +83,11 @@ export const ItemCard = ({
     });
   };
 
+  const currentLoggedUser = currentUserUsername || localStorage.getItem("username");
+
   const isOwner =
     product.user?.username?.trim().toLowerCase() ===
-    currentUserUsername?.trim().toLowerCase();
+    currentLoggedUser?.trim().toLowerCase();
 
   return (
     <div
@@ -135,7 +137,6 @@ export const ItemCard = ({
         </strong>
       </div>
 
-      {/* Botão estilizado com a cor azul e cantos arredondados */}
       {!isOwner && (
         <button className="btn-iniciar-chat" onClick={handleChatClick}>
           💬 Iniciar chat
