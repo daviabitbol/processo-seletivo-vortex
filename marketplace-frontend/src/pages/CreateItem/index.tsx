@@ -324,7 +324,7 @@ const fetchMyProducts = async () => {
           {!fetchLoading && !fetchError && (
             <div className="product-grid">
               {myProducts.map((product) => (
-                <ItemCard key={product.id} product={product} />
+                <ItemCard key={product.user.username} product={product} />
               ))}
             </div>
           )}
