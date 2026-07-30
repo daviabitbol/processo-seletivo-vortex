@@ -68,26 +68,26 @@ Depois, acesse pelo navegador do celular (na mesma rede) ou pelo Chrome DevTools
 
 🛠 Tecnologias Utilizadas
 Backend (marketplace-circular-api)
-Tecnologia	Uso
-NestJS	Framework principal da API (Node.js + TypeScript)
-TypeORM	ORM para acesso ao banco de dados
-PostgreSQL	Banco de dados relacional
-Socket.IO	Comunicação em tempo real (chat)
-JWT (@nestjs/jwt)	Autenticação e autorização
-bcrypt	Hash de senhas
-class-validator	Validação de dados de entrada (DTOs)
-Swagger (@nestjs/swagger)	Documentação interativa dos endpoints
-Throttler	Rate limiting das requisições
+Tecnologias -
+NestJS	Framework principal da API (Node.js + TypeScript) -
+TypeORM	ORM para acesso ao banco de dados -
+PostgreSQL	Banco de dados relacional -
+Socket.IO	Comunicação em tempo real (chat) -
+JWT (@nestjs/jwt)	Autenticação e autorização -
+bcrypt	Hash de senhas -
+class-validator	Validação de dados de entrada (DTOs) -
+Swagger (@nestjs/swagger)	Documentação interativa dos endpoints -
+Throttler	Rate limiting das requisições -
 Docker / Docker Compose	Provisionamento do banco de dados local
-Frontend (marketplace-frontend)
-Tecnologia	Uso
-React 19 + TypeScript	Biblioteca principal da interface
-Vite	Build tool e servidor de desenvolvimento
-vite-plugin-pwa	Geração do manifest e Service Worker (PWA)
-React Router DOM	Roteamento entre páginas
-Axios	Cliente HTTP para consumo da API
-Socket.IO Client	Conexão com o chat em tempo real
-jwt-decode	Leitura do token JWT no cliente
+Frontend (marketplace-frontend) 
+Tecnologias -
+React 19 + TypeScript	Biblioteca principal da interface -
+Vite	Build tool e servidor de desenvolvimento -
+vite-plugin-pwa	Geração do manifest e Service Worker (PWA) -
+React Router DOM	Roteamento entre páginas -
+Axios	Cliente HTTP para consumo da API -
+Socket.IO Client	Conexão com o chat em tempo real -
+jwt-decode	Leitura do token JWT no cliente -
 
 📖 Documentação da API
 
