@@ -105,6 +105,7 @@ export const ItemCard = ({
             fontSize: "24px",
             color: isStarred ? "#FFD700" : "#CCC",
             zIndex: 2,
+            visibility: isOwner ? "hidden" : "visible",
           }}
           title={
             isStarred ? "Remover dos favoritos" : "Adicionar aos favoritos"
@@ -138,7 +139,7 @@ export const ItemCard = ({
       </div>
 
       {!isOwner && (
-        <button className="btn-iniciar-chat" onClick={handleChatClick}>
+        <button className="btn-iniciar-chat" onClick={handleChatClick} style={{ visibility: isOwner ? "hidden" : "visible" }}>
           💬 Iniciar chat
         </button>
       )}
