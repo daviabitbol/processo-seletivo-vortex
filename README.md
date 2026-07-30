@@ -4,11 +4,11 @@ O Marketplace circular é uma aplicação web PWA feita para ajudar os estudante
 
 🚀 Como Rodar Localmente
 Pré-requisitos
-Node.js 18 ou superior
-Docker e Docker Compose (para o banco de dados)
-npm (instalado junto com o Node.js)
+    Node.js 18 ou superior
+    Docker e Docker Compose (para o banco de dados)
+    npm (instalado junto com o Node.js)
 1. Backend (API)
-bash
+
 # Entrar na pasta da API
 cd marketplace-circular-api
 
@@ -23,25 +23,20 @@ cp .env.example .env
 
 Preencha o .env com os seguintes valores (compatíveis com o docker-compose.yaml):
 
-env
 JWT_SECRET=uma_chave_secreta_qualquer
-JWT_EXPIRATION_TIME=3600s
+JWT_EXPIRATION_TIME=3600
 DB_HOST=localhost
 DB_PORT=5433
 DB_USERNAME=postgres
 DB_PASSWORD=12345678
 DB_NAME=marketplace-circular
 
-Opcional: defina também CHAT_ENCRYPTION_KEY (string de 32 caracteres) para customizar a chave de criptografia das mensagens do chat. Caso não seja definida, uma chave padrão de desenvolvimento é usada.
-
 Rode as migrations para criar as tabelas no banco:
 
-bash
 npm run migration:run
 
 Inicie o servidor em modo de desenvolvimento:
 
-bash
 npm run start:dev
 
 A API estará disponível em http://localhost:3000, e a documentação Swagger em http://localhost:3000/docs.
@@ -50,7 +45,6 @@ A API estará disponível em http://localhost:3000, e a documentação Swagger e
 
 Em outro terminal:
 
-bash
 # Entrar na pasta do frontend
 cd marketplace-frontend
 
@@ -59,17 +53,14 @@ npm install
 
 Crie um arquivo .env na raiz de marketplace-frontend apontando para a API local:
 
-env
 VITE_API_URL=http://localhost:3000
 
 Inicie o servidor de desenvolvimento:
 
-bash
 npm run dev
 
 A aplicação estará disponível em http://localhost:5173 (padrão do Vite). Para testar a instalação como PWA, gere o build de produção e sirva-o localmente:
 
-bash
 npm run build
 npm run preview
 
@@ -97,30 +88,6 @@ React Router DOM	Roteamento entre páginas
 Axios	Cliente HTTP para consumo da API
 Socket.IO Client	Conexão com o chat em tempo real
 jwt-decode	Leitura do token JWT no cliente
-
-
-📁 Estrutura do Projeto
-processo-seletivo-vortex/
-├── marketplace-circular-api/     # Backend (API RESTful)
-│   ├── src/
-│   │   ├── auth/                 # Autenticação (login, JWT, guard)
-│   │   ├── users/                # Cadastro de usuários
-│   │   ├── product/               # CRUD de anúncios/itens
-│   │   ├── wishlist/              # Lista de desejos
-│   │   ├── chat/                 # Gateway de chat em tempo real (WebSocket)
-│   │   └── db/                   # Configuração e migrations do banco
-│   ├── docker-compose.yaml       # Sobe o PostgreSQL local
-│   └── .env.example              # Variáveis de ambiente necessárias
-│
-└── marketplace-frontend/         # Frontend (PWA)
-    ├── src/
-    │   ├── pages/                 # Landing, Home, Login, SignUp, CreateItem, Wishlist, Chat...
-    │   ├── components/            # Componentes reutilizáveis (NavBar, ItemCard, Forms...)
-    │   ├── hooks/                 # Hooks customizados (fetch de produtos, wishlist, filtros)
-    │   ├── services/              # Cliente Axios e serviços de API
-    │   └── routes/                # Definição de rotas públicas e privadas
-    └── vite.config.ts            # Configuração do Vite + PWA
-
 
 📖 Documentação da API
 
