@@ -5,7 +5,7 @@ export class ProductTable1784712000000 implements MigrationInterface {
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`
             DO $$ BEGIN
-                CREATE TYPE "public"."product_type_enum" AS ENUM('doacao', 'venda');
+                CREATE TYPE "public"."product_type_enum" AS ENUM('doacao', 'troca', 'venda');
             EXCEPTION WHEN duplicate_object THEN null; END $$;
         `);
         await queryRunner.query(`
