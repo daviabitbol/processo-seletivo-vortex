@@ -16,8 +16,8 @@ import { ThrottlerModule } from '@nestjs/throttler';
       useFactory: (configService: ConfigService) => ({
         throttlers: [
           {
-            ttl: 60000,
-            limit: 100,
+            ttl: 1000,
+            limit: 5,
           },
         ],
       }),
